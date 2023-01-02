@@ -18,12 +18,7 @@ if res.status_code == 200:
     # html 파일을 생성한다. 파일이 존재하면 덮어쓰기를 진행한다.
     file = open("filtering_results.html", "wt", encoding='utf-8')
     # html head + body 시작부분
-    file.write("<!DOCTYPE html>\n<html lang='en'>\n<head>\n\t<meta charset='UTF-8'>\n\t<meta http-equiv='X-UA-Compatible' content='IE=edge'>\n\t\
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n\t<title>Filtering results</title>\n\n\t\
-        <!-- Latest compiled and minified CSS -->\n\t<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>\n\t\
-        <!-- jQuery library -->\n\t<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\n\t\
-        <!-- Popper JS -->\n\t<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>\n\t\
-        <!-- Latest compiled JavaScript -->\n\t<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>\n</head>\n<body>\n")
+    file.write("<!DOCTYPE html>\n<html lang='en'>\n<head>\n\t<meta charset='UTF-8'>\n\t<meta http-equiv='X-UA-Compatible' content='IE=edge'>\n\t<meta name='viewport' content='width=device-width, initial-scale=1.0'>\n\t<title>Filtering results</title>\n\n\t<!-- Latest compiled and minified CSS -->\n\t<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>\n\t<!-- jQuery library -->\n\t<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>\n\t<!-- Popper JS -->\n\t<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>\n\t<!-- Latest compiled JavaScript -->\n\t<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>\n</head>\n<body>\n")
     file.write("\t<div class='row row-cols-1 row-cols-md-3 mx-5'>\n")
     
     user_rating = float(input('최소 평점 설정(1~10): '))    # 사용자 입력 1: 최소 평점
@@ -60,11 +55,7 @@ if res.status_code == 200:
             }
             movies.append(info)
             
-            file.write("\t\t<div class='col mb-4'>\n\t\t\t<div class='card h-100'>\n\t\t\t\t\
-                <img style='width: auto;' src='{}' class='card-img-top' alt='...'>\n\t\t\t\t\
-                <div class='card-body'>\n\t\t\t\t\t<h5 class='card-title'>{}</h5>\n\t\t\t\t\t\
-                <h5 class='card-title'>평점: {}</h5>\n\t\t\t\t\t<h5 class='card-title'>\
-                참여자 수: {}</h5>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n".format(img_src, title, num, num2))
+            file.write("\t\t<div class='col mb-4'>\n\t\t\t<div class='card h-100'>\n\t\t\t\t<img style='width: auto;' src='{}' class='card-img-top' alt='...'>\n\t\t\t\t<div class='card-body'>\n\t\t\t\t\t<h5 class='card-title'>{}</h5>\n\t\t\t\t\t<h5 class='card-title'>평점: {}</h5>\n\t\t\t\t\t<h5 class='card-title'>참여자 수: {}</h5>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n".format(img_src, title, num, num2))
     
     file.write("\t</div>\n")
     # html body 끝 부분
