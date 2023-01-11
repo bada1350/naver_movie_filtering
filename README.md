@@ -9,7 +9,7 @@
 ## 사용법
 *VS Code에서 실행할 것을 권장합니다.*
 1. VS Code Live Server Extension 실행
-2. <code>naver_movie_filtering</code> 코드 실행
+2. <code>naver_movie_filtering.py</code> 코드 실행
 3. 영화 최소 평점/참여자 수 입력
 4. (자동) <code>http://127.0.0.1:5500/filtering_results.html</code> 접속
 <br><br><br>
