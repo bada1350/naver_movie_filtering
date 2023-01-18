@@ -3,7 +3,8 @@
 <br><br><br>
 
 ## 코드 설명
-*PPT를 참고 바랍니다.*
+[웹 스크래핑을 활용한 영화 필터링 프로그램.pdf](https://github.com/bada1350/naver_movie_filtering/files/10448303/default.pdf)
+
 <br><br><br>
 
 ## 사용법
